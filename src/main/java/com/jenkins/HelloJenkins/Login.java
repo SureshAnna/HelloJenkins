@@ -14,7 +14,7 @@ public class Login {
 	
 	 WebDriver driver;
 		
-		@BeforeMethod
+	 @Test
 		public void LunchBrowser(){
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Suresh\\workSpace4Automation\\BasicPractice\\chromedriver.exe");
@@ -27,11 +27,11 @@ public class Login {
 		 
 		}
 		
-		@Test
 		
-		public void InitBrowser(){
+		
+		/*public void InitBrowser(){
 			
-			WebElement From = driver.findElement(By.xpath(".//*[@id='treebox1']/div/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr[1]/td[4]/span"));
+			 WebElement From = driver.findElement(By.xpath(".//*[@id='treebox1']/div/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr[1]/td[4]/span"));
 
 			WebElement To = driver.findElement(By.xpath(".//*[@id='treebox2']/div/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr[2]/td[2]/table/tbody/tr[1]/td[4]/span"));
 
@@ -49,7 +49,7 @@ public class Login {
 		@AfterMethod
 	public void CloseBrowser(){
 			driver.close();
-		}
+		}*/
 		
 
 }
