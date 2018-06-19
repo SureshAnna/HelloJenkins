@@ -1,5 +1,7 @@
 package com.jenkins.HelloJenkins;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -23,6 +25,10 @@ public class Login {
 		 String URL = "http://www.dhtmlx.com/docs/products/dhtmlxTree/index.shtml";
 
 		 driver.get(URL);
+		 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		 driver.findElement(By.xpath("//a[@class='btn-large-green']")).click();
+		 System.out.println("Hello i am success");
+		 
 
 		 
 		}
